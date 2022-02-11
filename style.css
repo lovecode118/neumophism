@@ -7,7 +7,7 @@
 }
 *{
     padding: 0;
-    margin: 0;
+    margin: 10px;
     box-sizing: border-box;
 }
 *::before,*::after {
@@ -120,7 +120,6 @@ input{
     text-align: center;
 }
 .Twitter__Logo{
-    text-align: center;
     padding-top: 50px;
 }
 .Twitter__Loginform{
@@ -129,6 +128,20 @@ input{
     text-align: center;
 }
 .Twitter__Loginbutton{
-
+    width: 250px;
+    height: 50px;
+    margin: 40px;
+    border-radius: 50px;
+    background: var(--main-bg-color);
+    box-shadow:  20px 20px 60px var(--main-dr-color),
+    -20px -20px 60px var(--second-dr-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
+}
+input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--main-font-size);
+    color: var(--main-text-color);
 }
 
