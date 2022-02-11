@@ -1,3 +1,10 @@
+:root{
+    --main-bg-color:#00AADE;
+    --main-dr-color: #0091bd;
+    --second-dr-color:#00c4ff;
+    --main-text-color:#ffffff;
+    --main-font-size:18px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -16,10 +23,13 @@ a{
 }
 ul,
 ol {
-  list-style-type: none;
+    list-style-type: none;
 }
 a:active{
     color: black;
+}
+.Main{
+    text-align: center;
 }
 a:focus{
     outline: none;
@@ -31,6 +41,7 @@ button{
         outline: none;
         padding: 0;
         appearance: none;
+        
 }
 html{
     font-size: 62.5%;
@@ -41,7 +52,83 @@ body{
     scrollbar-width: none;
     scroll-behavior: smooth;
     min-width: 320px;
+    background: var(--main-bg-color);
 }
 body::-webkit-scrollbar {
     display: none;
 }
+img{
+    border-radius: 25px;
+    background: var(--main-bg-color);
+    box-shadow:  20px 20px 60px var(--main-dr-color),
+             -20px -20px 60px var(--second-dr-color);
+}
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+input[type='submit'],
+input[type='button'],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+input{
+    width: 250px;
+    height: 50px;
+    margin: 40px;
+    border-radius: 50px;
+    text-align: center;
+    background: var(--main-bg-color);
+    box-shadow:  20px 20px 60px var(--main-dr-color),
+    -20px -20px 60px var(--second-dr-color);
+}
+.Login{
+    max-width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background: var(--main-bg-color);
+    box-shadow:  20px 20px 60px var(--main-dr-color),
+    -20px -20px 60px var(--second-dr-color);
+}
+.Twitter{
+    text-align: center;
+}
+.Twitter__Logo{
+    text-align: center;
+    padding-top: 50px;
+}
+.Twitter__Loginform{
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+}
+.Twitter__Loginbutton{
+
+}
+
